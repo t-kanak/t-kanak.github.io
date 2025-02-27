@@ -12,12 +12,19 @@
         <h1>DECA Challenge </h1>
         <p>This website will be filled with my DECA work.</p>
     </div>
-        <div class="container">
+    <div class="container">
         <h1>Implementing unused instructions</h1>
         <ul>
           <li>There are 7 additional MOV instructions, using machine code as for MOV with with nonzero in the c register field INS(4:2), can be used. </li>
           <li>The assembler recognises MOVCn Ra Rb where n = 1..7 and generates the correct machine code. You may use any of these instructions in Lab 2 to interface with additional hardware.</li>
           <li>For example MOVC1 Ra, Rb could be used to implement Ra := Ra op Rb, where op is some new operation you have defined.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Adding to the datapath hardware</h1>
+        <ul>
+          <li> You can implement additional logic in and outputs from DPDECODE to control additional MUXes in the datapath. These MUXes can (only for the MOVCn instructions you decide to implement select the output of your hardware block(s) instead of the ALU. You can put your hardware on a separate sheet which you add as a component to the datapath sheet.</li>
+          <li>Use hierarchy to simplify your hardware design (this will also speed up design and testing!). As an example, look at the shift block you are given as part of EEP1. Be creative: you do not have to follow the examples in the notes exactly. Reuse hardware whenever possible when two different and related operations need to be implemented.</li>
         </ul>
     </div>
 </body>
