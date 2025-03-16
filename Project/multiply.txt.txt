@@ -1,0 +1,10 @@
+MOV R0, #8  // Moves -8 into R0
+MOV R1, #20  // Moves -20 into R1
+MOVC2 R0, R1  // Product = R0 * R1
+MOVC3 R4, R1  // Stores right 16 bits of product in R2
+MOVC4 R5, R1  // Stores left 16 bits of product in R3
+
+
+
+
+
